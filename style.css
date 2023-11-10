@@ -1,0 +1,21 @@
+body {
+    
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    justify-content: center;
+}
+
+#currentWeather {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}

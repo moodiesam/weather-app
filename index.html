@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="main">
+        <form id="form" class="form" action="#">
+            <div id="searchDiv">
+                <label for="location">Where are you?</label>
+                <input type="text" id="location" name="location" />
+            </div>
+            <button id="searchBtn" type="submit">Show Weather!</button>
+        </form>
+        <div id="currentWeather">
+            <div id="locationDiv" class="infoDisplay">Location</div>
+            <div id="regionDiv" class="infoDisplay">Region</div>
+            <div id="tempDiv" class="infoDisplay">Temp(c)</div>
+            <div id="conditionsDiv" class="infoDisplay">Current Conditions</div>
+        </div>
+    </div>
 
     <script src="javascript.js"></script>
 </body>
