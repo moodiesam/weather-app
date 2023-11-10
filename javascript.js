@@ -26,9 +26,9 @@ form.addEventListener('submit', (e) => {
     const conditionsDiv = document.getElementById('conditionsDiv');
 
     getWeather(searchLocation).then(([weatherLocation, weatherRegion, weatherTempC, weatherCondition]) => {
-        locationDiv.innerHTML = weatherLocation;
+        locationDiv.innerHTML = weatherLocation + ',';
         regionDiv.innerHTML = weatherRegion;
-        tempDiv.innerHTML = weatherTempC;
+        tempDiv.innerHTML = weatherTempC + 'c';
         conditionsDiv.innerHTML = weatherCondition;
     });
     form.reset();
